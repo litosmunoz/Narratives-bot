@@ -20,7 +20,7 @@ warnings.simplefilter("ignore")
 SYMBOL = "MINAUSDT"
 INTERVAL = "4h"
 K_ENTER = 0.25
-K_EXIT = 0.95
+K_EXIT = 0.92
 D_DIFF = 0.06
 RSI_WINDOW = 14
 STOCH_SMA = 3
