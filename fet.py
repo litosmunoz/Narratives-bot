@@ -17,7 +17,7 @@ warnings.simplefilter("ignore")
 
 
 # Variables
-SYMBOL = "GMXUSDT"
+SYMBOL = "FETUSDT"
 INTERVAL = "4h"
 K_ENTER = 0.25
 K_EXIT = 0.9
@@ -35,7 +35,7 @@ def exit_handler():
 
 atexit.register(exit_handler)
 orig_stdout = sys.stdout
-f = open('gmx_long.txt', 'w')
+f = open('fet_long.txt', 'w')
 sys.stdout = f
 
 

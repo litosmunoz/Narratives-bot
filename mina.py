@@ -172,7 +172,7 @@ def strategy_long(qty, open_position = False):
         
         
     while open_position:
-        time.sleep(60)
+        time.sleep(30)
         df = get5minutedata()
         apply_technicals(df)
         current_price = round(df.Close.iloc[-1], 3)
