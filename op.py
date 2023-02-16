@@ -17,11 +17,11 @@ warnings.simplefilter("ignore")
 
 
 # Variables
-SYMBOL = "FETUSDT"
+SYMBOL = "OPUSDT"
 INTERVAL = "4h"
 K_ENTER = 0.25
 K_EXIT = 0.9
-D_DIFF = 0.06
+D_DIFF = 0.07
 RSI_WINDOW = 14
 STOCH_SMA = 3
 REWARD = 1.1
@@ -35,7 +35,7 @@ def exit_handler():
 
 atexit.register(exit_handler)
 orig_stdout = sys.stdout
-f = open('fet_long.txt', 'w')
+f = open('op_long.txt', 'w')
 sys.stdout = f
 
 
