@@ -85,7 +85,7 @@ def get5minutedata():
 def apply_technicals(df):
     df["K"] = ta.momentum.stochrsi(df.Close, window= RSI_WINDOW)
     df["D"] = df["K"].rolling(STOCH_SMA).mean()
-    #df["RSI"] = ta.momentum.rsi(df.Close, window = RSI_WINDOW)
+    df["RSI"] = ta.momentum.rsi(df.Close, window = RSI_WINDOW)
     df.dropna(inplace=True)
 
 
